@@ -59,7 +59,8 @@ class DiscountController extends Controller
             $stat_by_merk[$merk]['total_car'] = count($discounts);
         }
 
-        asort($max_disc_by_merk);
+        natcasesort($max_disc_by_merk);
+        $max_disc_by_merk = array_reverse($max_disc_by_merk, true);
         // print_r($fruits);
         // print_r($max_disc_by_merk);
         // die();
