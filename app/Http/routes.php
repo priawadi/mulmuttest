@@ -31,6 +31,4 @@ Route::delete('/customer/hapus/{id_customer}', 'CustomerController@destroy');
 
 // Diskon
 Route::get('/diskon', 'DiskonController@index');
-
-// Olah Data
-Route::get('/data', 'DataController@index');
+Route::get('/discount', 'DiscountController@index');
